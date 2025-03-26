@@ -1,0 +1,66 @@
+body {
+  background-color: #f5fdf5;
+}
+
+.classe-informacoes-contato {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-transform: capitalize;
+}
+.box-informacoes {
+  border: 2px solid green;
+}
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+.textos-longos{
+    padding: 10px;
+    text-align: justify;
+}
+#titulo {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: lighter;
+  color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 40pt;
+  text-align: center;
+  background-color: darkolivegreen;
+}
+
+.titulo2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    background-color: #1f701f;
+    color: aliceblue;
+    box-sizing: content-box;
+    width: 40%;
+    text-align: center;
+}
+
+#subtituloFormacao {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li{
+    list-style:square;
+}
+ol li{
+    list-style: upper-roman;
+}
+a:link {
+  color: green;
+}
+a:visited {
+  color: #103a56;
+}
+a:hover {
+  font-size: larger;
+}
+a:active {
+  background-color: rgb(181, 246, 249);
+}
+
