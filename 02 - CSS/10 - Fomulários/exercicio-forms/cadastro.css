@@ -1,0 +1,72 @@
+html{
+    background-color: #3b78c2;
+    font-family:sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+}
+form{
+    padding: 2em;
+    box-shadow: -10px -5px 2px rgba(0,0,0,0.4);
+    width: 30%;
+    background-color: #fff;
+}
+fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+label,input{
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+}
+.legenda{
+    text-align: start;
+    margin-left: -0.4em;
+}
+legend{
+    margin: 0;
+    font-size: 4em;
+    color: #3b78c2;
+}
+label{
+    text-transform: uppercase;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #3b78c2;
+    outline: none;
+}
+.opcoes{
+    margin-top: 1em;
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.btn, .botaoCadastrar{
+    font-size: 1.4em;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn{
+    margin: 1em 0;
+    background-color: #3b78c2;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.botaoCadastrar{
+    text-decoration: none;
+    color: #3b78c2;
+    margin-left: 0.5em;
+}
