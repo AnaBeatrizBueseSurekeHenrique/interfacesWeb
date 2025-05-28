@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados</title>
+    <style>
+        /*NÃO FUNCIONA SE:  o primeiro elemento não for p, ou o ultimo nao seja um a 
+        NAO DIZ O PRIMERO FILHO Q É P mas o primeiro filho SE for p*/
+      div p:first-child{
+        color:brown;
+      }
+      div a:last-child{
+        color:cadetblue;
+      }
+      /*MESMA COISA é um se, não o segundo a ou terceiro p*/
+      div a:nth-child(2){
+        color: bisque;
+      }
+      div p:nth-child(3){
+        background-color: blueviolet;
+      }
+    </style>
+</head>
+<body>
+   <div>
+    <p>Primeiro Parágrafo</p>
+      <p>Segundo Parágrafo</p>  
+      <p>Terceiro Parágrafo</p>
+    </div>
+   <div>
+    <a href="#">Primeiro Link</a>
+    <a href="#">Segundo Link</a>
+    <a href="#">Terceiro Link</a>
+   </div>
+</body>
+</html>

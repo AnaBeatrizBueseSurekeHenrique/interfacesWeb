@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados</title>
+    <style>
+        /*Maximo de 3 elementos*/
+        /*article p a{
+            background-color: lightsalmon;
+        }*/
+        /*Apenas os filhos diretos de p.*/
+        /*
+        article h3 > a{
+            background-color: aqua;
+        }*/
+        /*Procura elementos irmão, em sequencia, e só afeta o segundo elemento,*/
+        /*article h3 + p{
+            background-color: aquamarine;
+        }*/
+        /*
+        article p + p{
+            background-color: lightsteelblue;
+        }*/
+        /*Todos os irmãos que estão no mesmo nivel de h3 e q sejam p*/
+        article h3 ~ p{
+            background-color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <article>
+        <h3>Título de Nível 3</h3>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+    </article>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+</body>
+</html>

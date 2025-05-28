@@ -1,0 +1,63 @@
+:root{
+    --primary-color: #e10f0f;
+}
+body {
+    font-family: sans-serif;
+    /*Esse tipo de imagem foi feita pra aplicar efeito em cima! Por isso é branco e preto*/
+    /*adicionar to top, to right e to left no inicio muda a direção do gradiente!*/
+    background-image:  linear-gradient(blue,var(--primary-color)), url(imagens/tile.png);
+    /*Isso daqui coloca o degrade nos tons de cinza da foto :0 se vc essa linha dá pra ver a diferença*/
+    background-blend-mode: color;
+    background-attachment: fixed;
+
+}
+.cores{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    /*mistura as cores 0:*/
+    /*
+    border: 8px dashed color-mix(in srgb, var(--primary-color), blue);
+    */
+    border: 8px dashed color-mix(in srgb, var(--primary-color), transparent);;;
+}
+/*aplica só no primeiro :0*/
+.cores:nth-of-type(1){    
+    /*como mistura as cores deixa meio opaco*/
+    background-color: color-mix(in srgb, var(--primary-color), transparent);
+}
+.cores:nth-of-type(2){
+    background-color: white;
+    /*deixo o background color dentro do padding :0*/
+    background-clip: padding-box;
+}
+.cores:nth-of-type(3){
+    /*sistema de cor novo _-_*/
+    /*tem a maior qtnd de cores*/
+    /*tom, saturação e luminosidade*/
+    background-color: hsl(50deg, 100%, 80%);
+}
+.cores:nth-of-type(3):hover{
+    background-color: hsl(50deg, 100%, 40%);
+    box-shadow: 10px 10px 6px -3px hsl(50deg, 100%, 30%);
+}
+.cores p{
+    margin: 0;
+}
+
+section{
+    /*Declarando variavel*/
+    counter-reset: contador;
+}
+.cores{
+    /*A cada div com classe cores, o valor do contador aumenta*/
+    counter-increment: contador;
+}
+.cores::before{
+    /*A cada div com classe cores, coloca antes o valor q tá no contador! então enumera as divs,
+    os [ ] são só pro número ficar em volta do colchetes! tipo [1], [2]*/
+    content: "["counter(contador)"]";
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+}

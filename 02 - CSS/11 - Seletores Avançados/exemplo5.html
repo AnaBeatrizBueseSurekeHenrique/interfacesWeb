@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Elementos</title>
+    <style>
+      /*Antes e depois, vem apenas por css, não dá pra copiar! se desabilitar o css ele some :0000000000000000000*/
+      p{
+        text-align: center;
+      }
+      p::before{
+        content: "<<<< ";
+      }
+      p::after{
+        content: " >>>>";
+      }
+     div::after{
+      content: "";
+      width: 1em;
+      height: 1em;
+      background-color: lightcoral;
+      display: block;
+     } 
+     div::after{
+      content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3J21ixlVS5q_MOfbSECdjDVXeyK_Re0JPmA&s");
+     }
+    </style>
+</head>
+<body>
+  <div>
+    <p>Parágrafo com texto simples.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformação 2D</title>
+    <style>
+        div{
+            outline: 1px solid black;
+            width: 200px;
+            margin: 0.5em auto;
+        }
+        p{
+            width: 50%;
+        }
+        .destaque{
+            background-color: lightgoldenrodyellow;
+        }
+        .div1 .destaque{
+            /*Muda de lugar 50px pra direita e 50px pra cima, a ordem é X, Y*/
+            transform: translate(50px, -50px);
+        }
+        .div2 .destaque{
+            /*Rotaciona em graus*/
+            transform: rotate(90deg);
+        }
+        .div3 .destaque{
+            /*Dobra o tamanho, 0.1 por exemplo aumentaria em 10%*/
+            transform: scale(2);
+        }
+        .div4 .destaque{
+            /*Inclina pra um lado, aqui ele inclina pra esquerda 25graus, e no eixo y em 45*/
+            transform: skew(25deg, 45deg);
+        }
+        .div5 .destaque{
+            /*N DA PRA USAR AS DUAS SEPARADAMENTE, ele só vai pegar o rotate*/
+            /*transform: translate(50px, -50px);
+            transform: rotate(90deg);*/
+            /*pra usar os 2 tem q fazer;*/
+            transform: translate(50px, -50px) rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+    </div>
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+    </div>
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+    </div>
+    <div class="div5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
+    </div>
+    
+</body>
+</html>
