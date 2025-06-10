@@ -96,22 +96,22 @@ p {
 
 .imagem-curriculo {
   border-radius:50%;
-  width: 10em;
+  width: 5em;
 }
 @media screen and (min-width:48.75em){
   .imagem-curriculo {
-    width: 15em;
+     width: 10em;
   }
 }
 @media screen and (min-width: 56.25em){
-.imagem-curriculo {
-    width: 20em;
-  }
+  .imagem-curriculo {
+      width: 13em;
+    }
 }
 @media screen and (min-width: 74em){
-.imagem-curriculo {
-    width: 25em;
-  }
+  .imagem-curriculo {
+      width: 15em;
+    }
 }
 hr{
  color: #133852;
