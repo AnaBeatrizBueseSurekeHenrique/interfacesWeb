@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+    <script>
+        let array = new Array(20);
+        for(let i = 0; i < 20; i++){
+            array[i] = parseFloat(prompt("Insira um valor!"));
+        }
+        let valImpar = 0;
+        array.forEach(function(el){
+            if(el%2 == 1){
+                valImpar += el;
+            }
+        })
+        alert("Valor soma dos impares: " + valImpar);
+        /*4.           Soma dos números ímpares
+Dado um array com 20 números, calcule 
+e exiba a soma apenas dos números ímpares.*/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

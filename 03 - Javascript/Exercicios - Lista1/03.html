@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <script>
+        /*3.           Contador de 1 a N
+Peça ao usuário para digitar um número inteiro positivo. 
+Exiba uma contagem de 1 até esse número, um valor por linha.*/
+        let n = prompt("digite um número");
+        if(!isNaN(n) && n > 0){
+            let cont = 1;
+            do{
+                document.write(cont + "<br />");
+                cont++;
+            }while((cont <= n))
+        }else{
+            alert("digite apenas números");
+        }
+    </script>
+</head>
+<body>
+    <h1>Exercicio 3</h1>
+</body>
+</html>

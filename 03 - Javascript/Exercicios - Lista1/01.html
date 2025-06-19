@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro Exercicio</title>
+  </head>
+  <body>
+    <h1>Primeiro Exercicio</h1>
+    <script>
+        /*1.Operações com dois números
+Peça para o usuário digitar dois números. 
+Se os valores forem válidos, exiba: a soma, subtração, multiplicação, divisão e o resto da divisão entre eles.*/
+      let numero1;
+      do {
+        numero1 = prompt("Insira um numero!");
+      } while (typeof numero1 == NaN);
+      let numero2;
+      do {
+        numero2 = prompt("Insira outro numero!");
+      } while (typeof numero2 == NaN);
+      soma = numero1 + numero2;
+      subtracao = numero1 - numero2;
+      multiplicacao = numero1 * numero2;
+      divisao = numero1 / numero2;
+      resto = numero1 % numero2;
+      alert(
+        `Soma: ${soma}. Subtracao: ${subtracao}. Divisao: ${divisao}. Multiplicacao: ${multiplicacao}. Resto: ${resto}`
+      );
+    </script>
+  </body>
+</html>

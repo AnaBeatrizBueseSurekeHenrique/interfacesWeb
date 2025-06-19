@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exericio 8</title>
+    <script>
+        /*8.           Média de notas
+Peça ao usuário que informe 4 notas. Calcule a média 
+e informe se ele foi aprovado (média maior ou igual a 7).*/
+        let notas = new Array(4);
+        for(let i = 0; i < 4; i++){
+            notas[i] = parseFloat(prompt("Insira sua nota numero " + (i+1)));
+        }
+        let soma = 0;
+        notas.forEach(function(el){
+            soma += el;
+        })
+        let media = soma/4;
+        if(media >= 7){
+            alert("Aprovado!")
+        } else{
+            alert("Reprovado!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Exercicio 8</h1>
+</body>
+</html>
